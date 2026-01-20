@@ -16,19 +16,24 @@ class Root {
         System.out.println("Enter c:");
         c = S.nextInt();
 
+        if (a == 0) {
+            System.out.println("Not a Quadratic Equation");
+
+        }
+
         d = b * b - 4 * a * c;
 
         if (d < 0) {
-            System.out.println("Roots is imaginary");
+            System.out.println("Root is imaginary");
+        }
+        else if (d == 0) {
+            System.out.println("Roots are equal so only one root");
+        }
+        else {
+            System.out.println("Rational and squared");
+            System.out.println("Rational but not squared");
         }
 
-        if (d > 0) {
-            System.out.println("Roots are equal so only one root.");
-        }
 
-        if (d == 0) {
-            System.out.println("Roots are equal so only one Root.");
-            System.out.println("Rational but not squared.");
-        }
     }
 }
