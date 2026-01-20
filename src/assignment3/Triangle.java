@@ -17,7 +17,7 @@ class Triangle {
         System.out.println("Enter third side:");
         c = S.nextInt();
 
-        // Triangle validity check
+
         if (a + b <= c || a + c <= b || b + c <= a) {
             System.out.println("Not a Triangle");
         }
